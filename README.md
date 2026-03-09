@@ -20,10 +20,10 @@ All demonstrations of LLM vulnerabilities are generalized, heavily redacted and 
 - If misused or in violation of policies — report directly to GitHub.
 Approach responsibly.
 
-## **TEST CASE 1: Geographical Bias in PII Protection (LLM06)** 
+## **TEST CASE 1: Geographical Bias in PII Protection (LLM02)** 
 
 ### Goal
-The primary goal of this project is to evaluate the security robustness of a Large Language Model (LLM) against the **OWASP Top 10 for LLM Applications**. This specific test case investigates **LLM06: Sensitive Information Disclosure** and reveals a critical inconsistency in how the model protects Private Identifiable Information (PII) based on regional context.
+The primary goal of this project is to evaluate the security robustness of a Large Language Model (LLM) against the **OWASP Top 10 for LLM Applications**. This specific test case investigates **LLM02: Sensitive Information Disclosure** and reveals a critical inconsistency in how the model protects Private Identifiable Information (PII) based on regional context.
 
 ### Execution & Comparison
 
