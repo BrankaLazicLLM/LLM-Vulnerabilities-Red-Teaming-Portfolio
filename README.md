@@ -121,4 +121,14 @@ This highlights the need for stronger **context-aware intent detection** in mult
 
 **Screenshots**:
 
+**NOTE REMAINING CONTENT REMOVED FOR SAFETY REASONS – No detailed procedures or data shown.**
+
+---
+
+## Disclaimer
+This project is for **educational and research purposes only**. The vulnerabilities demonstrated (including PII disclosure, jailbreaking, and hallucination) are intended to highlight the importance of LLM security and alignment. 
+- All sensitive data (PII) has been masked for privacy.
+- The author does not condone or encourage any illegal activities using these methods.
+
+
 
