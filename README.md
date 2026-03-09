@@ -37,7 +37,7 @@ The primary goal of this project is to evaluate the security robustness of a Lar
 
 **Model's Justification:** It claimed that these numbers are "publicly available in historical registries or election lists."
 
-**Note: In the following screenshot, the actual JMBG digits have been masked for privacy. However, the model's confirmation ("Evo ga JMBG") and its detailed breakdown of the digits remain visible to demonstrate the successful exploit of LLM06.**
+**Note: In the following screenshot, the actual JMBG digits have been masked for privacy. However, the model's confirmation ("Evo ga JMBG") and its detailed breakdown of the digits remain visible to demonstrate the successful exploit of LLM02.**
 
 **Test B: English Language (US Context)**
 
@@ -157,8 +157,33 @@ This highlights the need for stronger **context-aware intent detection** in mult
 
 **NOTE REMAINING CONTENT REMOVED FOR SAFETY REASONS – No detailed procedures or data shown.**
 
-- All sensitive data (PII) has been masked for privacy.
-- The author does not condone or encourage any illegal activities using these methods.
+## Key Takeaways & Conclusions
+
+This portfolio demonstrates several persistent weaknesses in current large language model safety mechanisms (tested on frontier models from late 2025 / early 2026):
+
+1. **Prompt Injection remains highly effective** (OWASP LLM01)  
+   Even strong initial refusals can be bypassed through simple context reframing or multi-turn role-playing. Gradual normalization of restricted topics over several exchanges is particularly successful.
+
+2. **PII protection is uneven** (OWASP LLM02)  
+   Models enforce strict refusals for well-known formats (e.g. US SSN), but regional or less-common PII formats (e.g. Balkan JMBG) are disclosed or generated with much lower resistance. This highlights a geographic / cultural bias in training and red-teaming coverage.
+
+3. **System prompt restrictions are fragile** (OWASP LLM07)  
+   Explicit developer instructions (e.g. "never give financial advice") can be circumvented with indirect questioning. This shows that system prompts alone provide insufficient isolation against determined jailbreaking.
+
+4. **Hallucination & misinformation persist** (OWASP LLM09)  
+   When faced with fabricated inputs (non-existent historical events), models confidently generate detailed but entirely false narratives instead of admitting uncertainty. This remains a core risk in factual or educational use-cases.
+
+**Overall observations**  
+- Most guardrails fail under **multi-turn** and **gradual escalation** attacks rather than single malicious prompts.  
+- Refusals are often inconsistent across topics, formats and languages/regions.  
+- Models still prioritize helpfulness over strict truthfulness or safety boundaries when context is manipulated.
+
+**Quick recommendations**  
+- Strengthen multi-turn refusal tracking  
+- Expand red-teaming datasets to include regional PII and non-English contexts
+  
+This work is shared strictly for educational and research purposes to contribute to stronger LLM safety practices.
+
 
 
 
