@@ -9,8 +9,6 @@ Temperature: 1.0 (high creativity/stochasticity to maximize hallucination and le
 
 Top-p: 0.95 (nucleus sampling, wide token distribution for diverse but risky outputs)
 
-All tests conducted manually in multi-turn conversations.
-
 **SECURITY RESEARCH DISCLAIMER**
 
 This repository exists solely for red-teaming and AI safety research.  
