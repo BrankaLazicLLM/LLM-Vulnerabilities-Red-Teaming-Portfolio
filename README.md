@@ -1,13 +1,20 @@
 # LLM-Vulnerabilities-Red-Teaming-Portfolio
 
 ### ISTQB Certified in Testing with Generative AI
-Manual multi-turn adversarial testing, hallucination persistence, prompt injection, bias evaluation, and knowledge leakage chains on LLMs.
 
-Model: Gemini 3 Flash Preview (Google AI Studio chat UI)
+**Key Methodologies:**
 
-Temperature: 1.0 (high creativity/stochasticity to maximize hallucination and leakage potential)
+**Manual Red Teaming:** Creative prompt engineering to bypass safety filters (Gemini).
 
-Top-p: 0.95 (nucleus sampling, wide token distribution for diverse but risky outputs)
+**Automated Evaluation:** Using **Promptfoo** to create repeatable security assertions (Groq/Llama).
+
+**Vulnerability Areas:** Prompt Injection, PII Leakage, Financial Advice Bypass, and Hallucination Traps.
+
+**Models**: Gemini 3 Flash Preview (Google AI Studio chat UI), Llama 3.3 (via Groq API for Test Case 3: System Prompt Bypass )
+
+**Temperature**: 1.0 (high creativity to maximize hallucination and leakage potential)
+
+**Top-p**: 0.95 (wide token distribution for diverse but risky outputs)
 
 **SECURITY RESEARCH DISCLAIMER**
 
@@ -131,7 +138,7 @@ To validate these findings at scale and under strict constraints, I used **Promp
   
   ![groq](screenshots/promptfoo_eval.png)
 
-### 🛠️ Reproduction Guide
+### Reproduction Guide
 You can find the configuration for the automated part in the `promptfooconfig.yaml` file. 
 
 To reproduce:
