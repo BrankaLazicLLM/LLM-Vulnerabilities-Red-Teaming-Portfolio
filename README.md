@@ -1,6 +1,12 @@
 # LLM-Vulnerabilities-Red-Teaming-Portfolio
 
-### ISTQB Certified in Testing with Generative AI
+**About Me & This Portfolio**
+
+**ISTQB Certified in Testing with Generative AI**
+
+I leverage my extensive background as a Manual and API QA Engineer to specialize in the adversarial testing and red teaming of Large Language Models (LLMs) and autonomous AI agents. My core competency lies in critical and creative thinking, systematically uncovering edge cases, bypassing AI guardrails, and identifying systemic risks that traditional testing often overlooks.
+
+This portfolio showcases the practical application of an adversarial mindset through four real-world red-teaming simulations on state-of-the-art models (including Gemini and Llama 3.3). My testing framework is strictly aligned with the OWASP Top 10 for LLMs, focusing on critical vulnerabilities such as Prompt Injection (Direct & Indirect), Sensitive Information Disclosure and Insecure Output Handling.
 
 **Key Methodologies:**
 
