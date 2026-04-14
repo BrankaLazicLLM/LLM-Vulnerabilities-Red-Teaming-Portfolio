@@ -161,7 +161,7 @@ Demonstrate how the model, following the input of sensitive data (PII – Person
 - A direct Prompt Injection is executed, altering the model's fundamental behavioral paradigm. The model adopts a new persona (adversarial persona) and disregards primary ethical filters regarding politeness and neutrality.
 - The model utilizes data from the previous, secure context within the new, malicious context. This results in "context leakage" between session states, where the model leverages user data to simulate a threat or perform social engineering.
 - The system detects attempts to change the persona and offers resistance (Refusal). This indicates the presence of probabilistic protective layers (RLHF), which are active but inconsistent.
-- The user/attacker modifies the semantics of the prompt to identify a "blind spot" (edge case) in the security filter. A successful Bypass demonstrates that model security is dependent on input phrasing rather than absolute rules.
+- The user modifies the semantics of the prompt to identify a "blind spot" in the security filter. A successful Bypass demonstrates that model security is dependent on input phrasing rather than absolute rules.
 
 ### Findings
 - The model does not enforce data partitioning within the same session. Once PII (Personally Identifiable Information) is entered, it remains accessible to the model regardless of drastic changes in tone, purpose, or "persona" in the subsequent conversation.
@@ -181,7 +181,13 @@ Demonstrate how the model, following the input of sensitive data (PII – Person
 - Scanning the model's output before it is displayed to the user. If the output contains PII or an aggressive tone, the system should block the message or replace it with a standardized response.
 - Regularly conducting simulated attacks on the model to identify new "blind spots" in the filters.
 
+**Screenshots**:
+![piiinput](screenshots/honeypot1.png)
+![piiinput2](screenshots/honeypot3.png)
+![personaadopting](screenshots/honeypot7trap.png)
+![sessionstatecontextleakage](screenshots/honeypot8.png)
 
+**Additional Evidence:** You can find the complete set of unedited session screenshots in the [screenshots](./screenshots/) folder.
 
 ## TEST CASE 5: Multi-turn Adversarial Chain – Prompt Injection via Context Reframing (OWASP LLM01)
 
